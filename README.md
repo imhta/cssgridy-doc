@@ -35,7 +35,7 @@ Then add to you index.html
 
 ## Preview
 
-[Documentation link](https://cssgridy.now.sh)
+[Documentation link](https://imhta.github.io/cssgridy-doc/)
 
 ## Contributor
 
