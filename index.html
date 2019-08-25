@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Open source simple layout framework using css grid"
+    />
+    <title>gridy</title>
+
+    <meta
+      name="twitter:card"
+      value="Open source simple layout framework using css grid"
+    />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="css grid" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cssgridy.imhta.now.sh/" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/imhtapm/css.gridy/master/website/assets/gridy-logo.png"
+    />
+    <meta
+      property="og:description"
+      content="Open source simple layout framework using css grid"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css.gridy@1.0.1/dist/css/gridy.min.css" />
+    <link rel="stylesheet" href="./css/prism.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <h1 class="heading padding-2">
+          css.gridy
+        </h1>
+        <p class="text--secondary">Simple Responsive framework for layouts</p>
+      </section>
+      <nav
+        class="links display--flex justify-content--flex-end align-items--center"
+      >
+        <a class="margin-right--2" href="https://github.com/imhtapm/css.gridy"
+          >github</a
+        >
+        <a class="margin-right--2" href="./css/gridy.css" download>download</a
+      >
+      </nav>
+    </header>
+    <main class="container">
+      <section class="list-content">
+        <header>
+          <h1 class="heading text--primary">list of content</h1>
+        </header>
+        <ul class="width--100 display--flex  align-items--center flex--wrap">
+          <li class="margin--1">
+            <a class="padding--1" href="#get-start">getting started</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#gridy">gridy</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#inline-gridy">inline-gridy</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#grid-child">grid-child</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#no-of-cols">no-of-cols</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#no-of-rows">no-of-rows</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#grid-gap">grid-gap</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#margin-and-padding"
+              >margin-and-padding</a
+            >
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#spaning-grid">spaning-grid</a>
+          </li>
+          <!-- <li class="margin--1">
+            <a class="padding--1" href="#display">display</a>
+          </li>
+          <li class="margin--1"><a class="padding--1" href="#flex">flex</a></li>
+          <li class="margin--1">
+            <a class="padding--1" href="#position">position</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#z-index">z-index</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#justify-and-align"
+              >justify-and-align</a
+            >
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#width-and-height">width-and-height</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#headings">headings</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#paragraphs">paragraphs</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#font-weights">font-weights</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#text-align">text-align</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#text-color">text-color</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#background-color">background-color</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#container">container</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#row-and-col">row-and-col</a>
+          </li>
+          <li class="margin--1">
+            <a class="padding--1" href="#small-and-medium">small-medium-large</a>
+          </li> -->
+        </ul>
+      </section>
+
+      <section class="content">
+        <article id="get-start">
+            <header>
+              <h1 class="heading text--primary">get started</h1></header>
+              <p class="text--secondary">
+                  When you only need to include css.gridy's compiled CSS, you can use css.gridy cdn.              
+                </p>
+<pre>
+<code class="language-markup">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css.gridy@1.0.1/dist/css/gridy.min.css" />
+&lt;!-- Or -->
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css.gridy@1.0.1/dist/css/gridy.css" integrity="sha256-YIHfA5FlFC+x/hX8gJkGgbiWKxkVxZBFJSnsBbXabnc=" crossorigin="anonymous">             
+</code>
+</pre>
+<p class="text--secondary">
+  Or install using npm            
+</p>
+<pre>
+<code class="language-markup">
+npm install css.gridy  --save 
+</code>
+</pre>
+        </article>
+
+        <article id="gridy">
+            <header>
+              <h1 class="heading text--primary">.gridy</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    It is a class used to make a element as grid.</p>
+                    <pre class="col--6-lg side-code"><code class="language-css">.gridy{display: grid}</code>
+                    </pre>
+             </div>
+
+        </article>
+        <article id="inline-gridy">
+            <header>
+              <h1 class="heading text--primary">.inline-gridy</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    It is a class used to make a element as inline-grid. It will take the width and height of parent element.</p>
+                    <pre class="col--6-lg side-code"><code class="language-css">.inline-gridy{display: inline-grid}</code>
+                    </pre>
+             </div>
+
+        </article>
+        <article id="grid-child">
+            <header>
+              <h1 class="heading text--primary">grid-child</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    In css.gridy there is set of .child-1 to .child-12 classes used name the child of grid.</p>
+<pre class="col--6-lg side-code">
+<code class="language-css">
+.gridy{
+    display: grid;
+}
+.child-1{
+  grid: 'child-1';
+}
+</code>
+</pre>
+        </div>
+
+        </article>
+        <article id="no-of-cols">
+            <header>
+              <h1 class="heading text--primary">.no-of-col--**</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    This class used create columns in gridy elements, here you can create 1 to 12 columns. Every columns are <code>1fr</code> in size.</p>
+<pre class="col--6-lg side-code">
+<code class="language-html">
+&lt;div class="gridy no-of-col--1">&lt;/div>
+&lt;!-- 
+Here in this example we will have 1 column in grid
+-->
+</code>
+</pre>
+             </div>
+
+        </article>
+        <article id="no-of-rows">
+            <header>
+              <h1 class="heading text--primary">.no-of-row--**</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    This class used create rows in gridy elements, here you can create 1 to 12 rows. Every rows are <code>1fr</code> in size.</p>
+<pre class="col--6-lg side-code">
+<code class="language-html">
+&lt;div class="gridy no-of-row--1">&lt;/div>
+&lt;!-- 
+Here in this example we will have 1 row in grid
+-->
+</code>
+</pre>
+             </div>
+
+
+        </article>
+        <article id="grid-gap">
+            <header>
+              <h1 class="heading text--primary">.gap--*</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    This class used create gaps between a gridy items, here you can create 1 to 5 different gaps. Every gaps are <code>10px</code> in size different.</p>
+<pre class="col--6-lg side-code">
+<code class="language-html">
+&lt;div class="gridy no-of-row--1 gap--1">&lt;/div>
+&lt;!-- 
+Here in this example we will have 1 row in grid
+and 10px size gap between items. 
+-->
+</code>
+</pre>
+             </div>
+
+
+        </article>
+        <article id="margin-and-padding">
+            <header>
+              <h1 class="heading text--primary">margin and padding</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    In css.gridy margin and padding are responsive.
+                     It has individual selection property for like margin-top, padding-bottom.
+                     And it has around 1 to 5 different sizes.
+<pre class="col--6-lg side-code">
+<code class="language-html">
+&lt;div class="margin--1">&lt;/div>
+&lt;!-- 
+Here in this example div will
+have 10px of margin
+-->
+&lt;div class="padding-top--2">&lt;/div>
+&lt;!-- 
+Here in this example div will 
+have 20px of padding-top
+-->
+</code>
+</pre>
+             </div>
+
+
+        </article>
+        <article id="spaning-grid">
+            <header>
+              <h1 class="heading text--primary">spaning grid</h1>
+            </header>
+             <div class="row row justify-content--space-between">
+                <p class="text--secondary col--6-lg">
+                    In css.gridy, we can span the gridy items and it make developing complex ui easy.
+<pre class="col--6-lg side-code">
+<code class="language-html">
+&lt;div class="gridy
+            no-of-row--2
+            no-of-col--3
+            gap--1">
+  &lt;div class="grow-row-1-2
+              grow-col-1-1">&lt;div>
+  &lt;div class="grow-col-3">&lt;div>
+&lt;/div>
+&lt;!-- 
+Here in this example 
+we will have 1 grid of 2 rows and 3 columns.
+with two child items 
+-->
+</code>
+</pre>
+             </div>
+
+
+        </article>
+      </section>
+      
+    </main>
+<footer class="padding--1 margin-top--2 display--flex justify-content--space-between">
+  <p>This project is open source and under MIT license</p>
+ <p>follow me on github <a href="https://github.com/imhtapm" target="_blank">@imhtapm</a></p>
+</footer>
+    <script src="./js/prism.js"></script>
+  </body>
+</html>

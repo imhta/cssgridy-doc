@@ -1,0 +1,68 @@
+nav{
+    background-color:  #00AAAA
+}
+header section{
+ padding: 40px 80px;
+}
+header section h1{
+    color: #00AAAA;
+    font-size: 78px;
+    letter-spacing: 2px;
+    line-height: 1px
+}
+header section p{
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.links{
+    background-color: #00AAAA;
+    font-size: 20px;
+    height: 80px;
+}
+.links a{
+    color: white
+}
+.links a:hover{
+    color: rgb(35, 70, 70)
+}
+
+
+main .list-content ul{
+    min-height: 200px;
+    font-size: 18px;
+}
+main .list-content ul li a{
+    color: grey;
+}
+main .list-content ul li a:hover{
+    background-color: #00AAAA;
+    color: white;
+}
+footer{
+    background-color: #00AAAA;
+    font-size: 20px;
+    margin: 0px;
+}
+footer a{
+    color: white;
+}
+
+@media only screen and (max-width: 750px){
+    header section{
+        padding: 20px 20px;
+       }
+       header section h1{
+           color: #00AAAA;
+           font-size: 48px;
+           letter-spacing: 2px;
+           line-height: 1px
+       }
+       header section p{
+           font-weight: 800;
+           letter-spacing: 2px;
+       }
+       main section article h1{
+        font-size: 28px;
+       }
+}
