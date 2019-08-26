@@ -1,5 +1,5 @@
 <img alt="css.gridy logo"
-     src="https://raw.githubusercontent.com/imhtapm/cssgridy-doc/master/assets/gridy-logo.png"
+     src="https://raw.githubusercontent.com/imhta/cssgridy-doc/master/assets/gridy-logo.png"
      width="150">
 
 # css.gridy
