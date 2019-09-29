@@ -39,6 +39,6 @@ Then add to you index.html
 
 ## Contributor
 
-[@imhtapm](https://github.com/imhtapm)
+[@imhta](https://github.com/imhta)
 
 Feel free to make PR
